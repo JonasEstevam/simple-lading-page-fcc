@@ -1,0 +1,146 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div id="header-logo">
+        <img
+          id="header-img"
+          src="http://pngimg.com/uploads/banana/banana_PNG848.png"
+        />
+        <p>Ban... Bananas</p>
+      </div>
+      <a href="javascript:void(0)" onclick="openNav()" id="open-nav-icon"
+        ><i class="material-icons" style="color: black">menu</i></a
+      >
+      <nav id="nav-bar">
+        <a href="javascript:void(0)" onclick="closeNav()" id="close-nav-icon"
+          ><i class="material-icons" style="color: black">close</i></a
+        >
+        <br />
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#video">Demonstration</a>
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div id="title">
+        <h1>The best bananas in the world</h1>
+        <p>If you have a banana in your pocket, you have everything.</p>
+      </div>
+      <form id="form">
+        <label id="email-label" for="email">
+          we'll send you news about bananas</label
+        >
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Type your e-mail"
+        />
+        <input
+          class="button"
+          id="submit"
+          type="submit"
+          formaction=" https://www.freecodecamp.com/email-submit"
+          formtarget="_blank"
+        />
+      </form>
+      <div id="about">
+        <h3>About</h3>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+          orci risus, sodales ut dapibus eget, pellentesque sit amet elit. Morbi
+          viverra felis ipsum, at aliquam erat varius a. Sed id arcu quis erat
+          ultrices venenatis.
+        </p>
+      </div>
+      <div id="video-div">
+        <h3>See how beatiful it is</h3>
+        <br />
+        <video id="video" controls>
+          <source src="video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div id="features">
+        <h3>Awesome things you can do with your banana</h3>
+        <br />
+        <ul id="features-list">
+          <li>Play League of Legends</li>
+          <li>Pretend you are a wizard and the banana is your wand</li>
+          <li>Go to the movies</li>
+          <li>Use as a boomerang</li>
+          <li>And everything else you can do with a human friend</li>
+        </ul>
+        <br />
+        <h2>Things you CAN NOT do with your banana</h2>
+        <br />
+        <ul>
+          <li>Eat it</li>
+          <li>Give it to a monkey</li>
+          <li>Throw it in your brother's big head</li>
+        </ul>
+      </div>
+      <div id="pricing">
+        <h3>Pricing</h3>
+        <br />
+        <div id="pricing-cards">
+          <div class="card">
+            <h2>Simple Banana Pack</h2>
+            <p>Buying this pack you'll get:</p>
+            <ul>
+              <li>Bananas</li>
+            </ul>
+
+            <div class="price">
+              <h2>$ 987.22</h2>
+              <p>/month</p>
+            </div>
+            <input type="button" class="button" value="BUY NOW" />
+          </div>
+          <div class="card">
+            <h2>Incredibly Huge Banana Pack</h2>
+            <p>Buying this pack you'll get:</p>
+            <ul>
+              <li>Bananas</li>
+            </ul>
+
+            <div class="price">
+              <h2>$ 4987.22</h2>
+              <p>/month</p>
+            </div>
+            <input type="button" class="button" value="BUY NOW" />
+          </div>
+          <div class="card">
+            <div id="recommended">
+              <p>Recommended</p>
+            </div>
+            <h2>Unnecessarily Huge Banana Pack</h2>
+            <p>Buying this pack you'll get:</p>
+            <ul>
+              <li>Bananas</li>
+            </ul>
+
+            <div class="price">
+              <h2>$ 14987.22</h2>
+              <p>/month</p>
+            </div>
+            <input type="button" class="button" value="BUY NOW" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
